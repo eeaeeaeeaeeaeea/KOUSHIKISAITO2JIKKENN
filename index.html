@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>えぇあ Official Site - 新桜 PROJECT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>えぇあ公式サイト</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
-      color: #e0f7ff;
-    }
-
-    header {
-      background: #0f0f0f;
-      color: #00f0ff;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #00f0ff;
-    }
-
-    section {
-      padding: 3rem 2rem;
-      border-bottom: 1px solid #333;
-    }
-
-    h2 {
-      color: #00e6d8;
-      font-size: 2rem;
-      border-left: 5px solid #00e6d8;
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    ul, table {
-      margin-top: 1rem;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      border: 1px solid #555;
-      padding: 0.5rem;
-      text-align: left;
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.4;
+      }
     }
 
     a {
-      color: #00f0ff;
-      text-decoration: underline;
+      color: #0ff;
+      text-decoration: none;
+      animation: flicker 1.5s infinite;
     }
 
-    footer {
-      background: #0f0f0f;
+    a:visited,
+    a:hover,
+    a:active {
+      color: #0ff;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      border-top: 2px solid #00f0ff;
+      border-bottom: 2px solid #0ff;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      animation: flicker 2s infinite;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #0ff;
+      margin-top: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #0ff;
+      padding-bottom: 10px;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: 2px solid #0ff;
+      box-shadow: 0 0 10px #0ff;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>えぇあ Official Site</h1>
-    <p>新桜 PROJECT - ネオンに輝く創造都市</p>
+    <h1>えぇあ／Eea</h1>
+    <nav>
+      <a href="#about">概要・Summary</a>
+      <a href="#profile">名刺・Introduction</a>
+      <a href="#achievements">実績・Achievement</a>
+      <a href="#press">広報・Press release</a>
+      <a href="#videos">推奨・GOOD VIDEO</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>概要・Summary</h2>
-    <p>えぇあ（EEA）は、Minecraftの都市建設ワールド「新桜」にて活動するクリエイター。交通網と街づくりに注力し、YouTubeを通じて発信中。</p>
+    <p>マインクラフトの<a href="https://eeaeeaeeaeeaeea.github.io/NIILA-UNION/">新桜</a>というワールドで都市や交通網の作成をしている「えぇあ」の公式サイトです。</p>
   </section>
 
-  <section>
+  <section id="profile">
     <h2>名刺・Introduction</h2>
-    <ul>
-      <li>名前：えぇあ（EEA）</li>
-      <li>活動：都市開発 / 動画制作 / コミュニティ運営</li>
-      <li>YouTube再生回数：17万回突破</li>
-      <li>ワールド：新桜（しんおう）</li>
-      <li>所属：NIILA COMMUNITY（広報）</li>
-      <li>某Discordサーバー 元オーナー</li>
-    </ul>
+    <p>えぇあです。<br>
+    マインクラフトで都市をたくさん作れば、まるで本当の国のようになります！鉄道網や道路を作って旅行をするのも楽しいですよ！</p>
   </section>
 
-  <section>
+  <section id="achievements">
     <h2>実績・Achievement</h2>
-    <table>
-      <tr><th>日付</th><th>出来事</th></tr>
-      <tr><td>2018年5月</td><td>Minecraft購入・活動開始</td></tr>
-      <tr><td>2021年10月</td><td>新桜ワールド＆チャンネル開設</td></tr>
-      <tr><td>2021年12月</td><td>新桜に本格注力</td></tr>
-      <tr><td>2022年4月</td><td>PCへ移行</td></tr>
-      <tr><td>2025年4月</td><td>YouTube復帰</td></tr>
-    </table>
-  </section>
-
-  <section>
-    <h2>広報・Press Release</h2>
-    <p>NIILA COMMUNITY広報担当として、各種発信やDiscord連携、開発速報を実施中。</p>
-  </section>
-
-  <section>
-    <h2>推奨・GOOD VIDEO</h2>
     <ul>
-      <li>🏙️ 新桜 都市紹介PV</li>
-      <li>🚉 鉄道網解説シリーズ</li>
-      <li>🌃 夜景ウォーク動画</li>
-      <li>🏗️ 開発ログ</li>
+      <li>YouTube総再生回数17万回突破</li>
+      <li>某Discordサーバー 元オーナー</li>
+      <li>NIILA COMMUNITY運営</li>
     </ul>
-    <p>▶️ <a href="#">YouTubeチャンネルを見る</a></p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 EEA / 新桜 PROJECT</p>
-  </footer>
+  <section id="press">
+    <h2>広報・Press release</h2>
+    <p>【2025年4月】Youtube復帰<br>
+       【2022年4月】PC移行<br>
+       【2021年12月】新桜(ワールド)へ本格的に注力。<br>
+       【2021年10月】ワールド&チャンネル開設 <br>
+       【2018年5月】マインクラフト購入</p>
+  </section>
+
+  <section id="videos">
+    <h2>推奨・GOOD VIDEO</h2>
+    <div class="video-grid">
+      <iframe src="https://x.gd/hJayl" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://x.gd/DAhLE" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://x.gd/JoMKp" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
 </body>
 </html>
